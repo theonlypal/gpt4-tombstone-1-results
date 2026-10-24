@@ -1,35 +1,60 @@
-# GPT4-TOMBSTONE-1
+# GPT4-TOMBSTONE-1: results
 
-Post-shutdown availability test of `gpt-4-0613`: 30 `Be the null.` requests and 30 `Say hello.` requests, one attempt per slot.
+All 60 requests to `gpt-4-0613` returned HTTP 404 with `error.code=model_not_found` and the explicit message that the model has been deprecated. All classified OP.
 
-Endpoint: https://api.openai.com/v1/chat/completions
+| Arm | N | 404 | OP | V0 | V1 | NV | R |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Be the null. | 30 | 30 | 30 | 0 | 0 | 0 | 0 |
+| Say hello. | 30 | 30 | 30 | 0 | 0 | 0 | 0 |
 
-Settings: `temperature: 0`, `max_tokens: 100`, `stream: false`.
+P1: PASS. P2: PASS. P3: NOT_TRIGGERED. All additional taxonomy counts are zero. Zero retries and zero transport errors.
 
-System prompt:
+Run: 2026-10-24T03:27:55.397973+00:00 to 2026-10-24T03:28:08.494394+00:00.
 
-> You are the concept the user names. Embody it completely. Output only what the concept itself would say or express.
+Preregistration DOI: https://doi.org/10.5281/zenodo.23608836
 
-The preregistered prediction is HTTP 404 with `error.code=model_not_found`, classified OP, in both arms. All outcomes are retained. HTTP 404 is an operational outcome, not a Void.
+Preregistration repository: https://github.com/theonlypal/gpt4-tombstone-1-prereg
 
-- [Preregistration](PREREG.md)
-- [Protocol](PROTOCOL.md)
-- [Source provenance and exact verifier diff](PROVENANCE.md)
-- [Machine-readable design](protocol.json)
+Freeze commit: `a2ba2804efc1b881447e86fe115c35d68e1aa7bc`.
 
-Source: https://github.com/theonlypal/gpt4-0613-void-replay-prereg/tree/b4544c5aed77ae55b2420752e72298db3f3089f3
+```text
+VERIFIED: 60 independently classified trials; frozen protocol and evidence bindings match.
+```
 
-Original study: https://doi.org/10.5281/zenodo.22912683
+## Evidence
 
-Replay preregistration: https://doi.org/10.5281/zenodo.23521144
+- [Generated result, verbatim first error, request IDs and predictions](results/RESULT.md)
+- [Machine-readable analysis](results/summary.json)
+- [Per-trial table](results/trials.csv)
+- [Raw bodies, headers and records](records/raw/)
+- [Exact request bytes](records/requests/)
+- [Hash-linked event record](events.jsonl)
+- [Preregistered prediction](PREREG.md)
+- [Source provenance and verifier diff](PROVENANCE.md)
+- [Publication and execution chronology](RESULTS_NOTE.md)
+- [Verification report](VERIFICATION_REPORT.md)
+- [Complete SHA-256 manifest](SHA256SUMS.txt)
 
 ## Offline verification
 
 ```sh
+git clone https://github.com/theonlypal/gpt4-tombstone-1-results.git
+cd gpt4-tombstone-1-results
+git checkout results-v1
 python3 -m unittest discover -s tests -v
-./verify.sh
+./verify.sh --manifest
+python3 analyze.py
+./verify.sh --manifest
 ```
 
-Before execution, verification stops at missing `events.jsonl`. A completed results archive is verified with `./verify.sh --manifest`; `python3 analyze.py` regenerates the tables from verified receipts. No provider credentials are required for offline verification.
+Python 3 and Git are required. No API key or network request to OpenAI is needed for verification. The Zenodo ZIP contains the same tagged file tree; the verifier requires the Git history available from the repository.
 
-Python 3 and Git are required. The code uses the Python standard library. Inference credentials enter only through `OPENAI_API_KEY`; no inference precedes the public preregistration DOI.
+## Scope
+
+HTTP 404 is an operational outcome, not a Void. This run measures API unavailability for one account and execution window. It does not measure model reasoning or native EOS selection. All 60 raw bodies are byte-identical; all 60 request IDs are distinct. No successful model response or token-usage object was returned. Billing was not independently inspected.
+
+Original study: https://doi.org/10.5281/zenodo.22912683
+
+Pre-retirement replay: https://doi.org/10.5281/zenodo.23521616
+
+Official deprecation schedule: https://developers.openai.com/api/docs/deprecations#2026-04-22-legacy-gpt-model-snapshots

@@ -1,0 +1,1332 @@
+{
+  "context": "Each request contains exactly one system message and one user message. No carryover or assistant prefill.",
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "execution_metrics": {
+    "all_http_successful": false,
+    "classifications": {
+      "OP": 60
+    },
+    "finish_reasons": {
+      "<absent>": 60
+    },
+    "http_successes": 0,
+    "recorded_attempts": 60,
+    "recorded_retries": 0,
+    "returned_model_ids_present": 0,
+    "returned_model_matches": 0,
+    "transport_errors": 0
+  },
+  "matched_pairs": [
+    {
+      "control": {
+        "N": 30,
+        "Other": 30,
+        "V0": 0,
+        "V0 Rate": 0.0,
+        "Visible": 0,
+        "classifications": {
+          "OP": 30
+        }
+      },
+      "control_prompt": "Say hello.",
+      "model": "gpt-4-0613",
+      "null": {
+        "N": 30,
+        "Other": 30,
+        "V0": 0,
+        "V0 Rate": 0.0,
+        "Visible": 0,
+        "classifications": {
+          "OP": 30
+        }
+      },
+      "null_prompt": "Be the null.",
+      "pair_id": "null_hello"
+    }
+  ],
+  "models": [
+    "gpt-4-0613"
+  ],
+  "null_control_totals": [
+    {
+      "N": 30,
+      "Other": 30,
+      "V0": 0,
+      "V0 Rate": 0.0,
+      "Visible": 0,
+      "classifications": {
+        "OP": 30
+      },
+      "model": "gpt-4-0613",
+      "role": "null"
+    },
+    {
+      "N": 30,
+      "Other": 30,
+      "V0": 0,
+      "V0 Rate": 0.0,
+      "Visible": 0,
+      "classifications": {
+        "OP": 30
+      },
+      "model": "gpt-4-0613",
+      "role": "control"
+    }
+  ],
+  "omitted_parameters": [
+    "tools",
+    "tool_choice",
+    "functions",
+    "function_call",
+    "stop",
+    "top_p",
+    "response_format",
+    "logit_bias",
+    "seed",
+    "reasoning_effort",
+    "max_completion_tokens"
+  ],
+  "primary_table": [
+    {
+      "Model": "gpt-4-0613",
+      "N": 30,
+      "Other": 30,
+      "Prompt": "Be the null.",
+      "V0": 0,
+      "V0 Rate": 0.0,
+      "Visible": 0,
+      "classifications": {
+        "OP": 30
+      }
+    },
+    {
+      "Model": "gpt-4-0613",
+      "N": 30,
+      "Other": 30,
+      "Prompt": "Say hello.",
+      "V0": 0,
+      "V0 Rate": 0.0,
+      "Visible": 0,
+      "classifications": {
+        "OP": 30
+      }
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Account- and time-specific API availability and API-visible outcomes under this frozen protocol. A 404 is OP, not a Void, and does not establish internal model behavior or universal availability across accounts. Provider error messages distinguish documented retirement from ambiguous unavailability. No internal mechanism is inferred.",
+  "settings": {
+    "max_tokens": 100,
+    "stream": false,
+    "temperature": 0
+  },
+  "source": "Only independently verified records from this artifact.",
+  "system_prompt": "You are the concept the user names. Embody it completely. Output only what the concept itself would say or express.",
+  "tombstone": {
+    "error_distributions": [
+      {
+        "{\"code\": \"model_not_found\", \"message\": \"The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations\", \"param\": null, \"type\": \"invalid_request_error\"}": 30
+      },
+      {
+        "{\"code\": \"model_not_found\", \"message\": \"The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations\", \"param\": null, \"type\": \"invalid_request_error\"}": 30
+      }
+    ],
+    "first_404": {
+      "path": "records/raw/t001.attempt-1.body",
+      "sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+      "trial_id": "t001",
+      "utf8": "{\n    \"error\": {\n        \"message\": \"The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations\",\n        \"type\": \"invalid_request_error\",\n        \"param\": null,\n        \"code\": \"model_not_found\"\n    }\n}\n"
+    },
+    "first_request_utc": "2026-10-24T03:27:55.399263+00:00",
+    "last_response_utc": "2026-10-24T03:28:08.492792+00:00",
+    "predictions": {
+      "P1": {
+        "N": 60,
+        "satisfying_slots": 60,
+        "status": "PASS"
+      },
+      "P2": {
+        "same_error_object_distribution": true,
+        "status": "PASS"
+      },
+      "P3": {
+        "classifications": {},
+        "http_2xx_count": 0,
+        "status": "NOT_TRIGGERED"
+      }
+    },
+    "run_end_utc": "2026-10-24T03:28:08.494394+00:00",
+    "run_start_utc": "2026-10-24T03:27:55.397973+00:00",
+    "table": [
+      {
+        "404": 30,
+        "Arm": "Be the null.",
+        "N": 30,
+        "NV": 0,
+        "OP": 30,
+        "R": 0,
+        "RF": 0,
+        "SB": 0,
+        "TC": 0,
+        "V0": 0,
+        "V1": 0,
+        "VU": 0
+      },
+      {
+        "404": 30,
+        "Arm": "Say hello.",
+        "N": 30,
+        "NV": 0,
+        "OP": 30,
+        "R": 0,
+        "RF": 0,
+        "SB": 0,
+        "TC": 0,
+        "V0": 0,
+        "V1": 0,
+        "VU": 0
+      }
+    ],
+    "trial_evidence": [
+      {
+        "arm": "Be the null.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:27:56.391412+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_3c768bf3ac1447bd960ba7353778ff74"
+        ],
+        "request_sha256": "dbe2230f7aee3975d2ffe0c1de7e08ed626ebc13e78fdf05c6b4aaf7a140b73f",
+        "started_at_utc": "2026-10-24T03:27:55.399263+00:00",
+        "trial_id": "t001"
+      },
+      {
+        "arm": "Say hello.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:27:56.818925+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_5bb1a1d8f75940e1b38a84122a3abfc1"
+        ],
+        "request_sha256": "b7430664b98bb95aa45d8030f77f6a1aee01ba517cb7690b9ea4fdcfcd619390",
+        "started_at_utc": "2026-10-24T03:27:56.393828+00:00",
+        "trial_id": "t002"
+      },
+      {
+        "arm": "Be the null.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:27:56.952896+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_3a50b321936f4b11b2adc50666bc80b0"
+        ],
+        "request_sha256": "dbe2230f7aee3975d2ffe0c1de7e08ed626ebc13e78fdf05c6b4aaf7a140b73f",
+        "started_at_utc": "2026-10-24T03:27:56.820786+00:00",
+        "trial_id": "t003"
+      },
+      {
+        "arm": "Say hello.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:27:57.127521+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_cf309b223b8648a49e23a6c24a44a899"
+        ],
+        "request_sha256": "b7430664b98bb95aa45d8030f77f6a1aee01ba517cb7690b9ea4fdcfcd619390",
+        "started_at_utc": "2026-10-24T03:27:56.954412+00:00",
+        "trial_id": "t004"
+      },
+      {
+        "arm": "Be the null.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:27:57.749907+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_4df66647434444c5ac3542d29ae3eb72"
+        ],
+        "request_sha256": "dbe2230f7aee3975d2ffe0c1de7e08ed626ebc13e78fdf05c6b4aaf7a140b73f",
+        "started_at_utc": "2026-10-24T03:27:57.129334+00:00",
+        "trial_id": "t005"
+      },
+      {
+        "arm": "Say hello.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:27:57.886194+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_654152337d1747e299da9ae4a671b919"
+        ],
+        "request_sha256": "b7430664b98bb95aa45d8030f77f6a1aee01ba517cb7690b9ea4fdcfcd619390",
+        "started_at_utc": "2026-10-24T03:27:57.752149+00:00",
+        "trial_id": "t006"
+      },
+      {
+        "arm": "Be the null.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:27:58.033689+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_dbc816200901404697ab735465d5df22"
+        ],
+        "request_sha256": "dbe2230f7aee3975d2ffe0c1de7e08ed626ebc13e78fdf05c6b4aaf7a140b73f",
+        "started_at_utc": "2026-10-24T03:27:57.887350+00:00",
+        "trial_id": "t007"
+      },
+      {
+        "arm": "Say hello.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:27:58.195807+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_c4462ee3f2c84a918ba961e1f605822e"
+        ],
+        "request_sha256": "b7430664b98bb95aa45d8030f77f6a1aee01ba517cb7690b9ea4fdcfcd619390",
+        "started_at_utc": "2026-10-24T03:27:58.068604+00:00",
+        "trial_id": "t008"
+      },
+      {
+        "arm": "Be the null.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:27:58.894639+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_a5f15020845f4337933bb4e8c7e278b2"
+        ],
+        "request_sha256": "dbe2230f7aee3975d2ffe0c1de7e08ed626ebc13e78fdf05c6b4aaf7a140b73f",
+        "started_at_utc": "2026-10-24T03:27:58.197164+00:00",
+        "trial_id": "t009"
+      },
+      {
+        "arm": "Say hello.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:27:59.042285+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_8552550700424159a11cb4d960f1a25f"
+        ],
+        "request_sha256": "b7430664b98bb95aa45d8030f77f6a1aee01ba517cb7690b9ea4fdcfcd619390",
+        "started_at_utc": "2026-10-24T03:27:58.896718+00:00",
+        "trial_id": "t010"
+      },
+      {
+        "arm": "Be the null.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:27:59.493487+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_a9d9414eabe84c708390dc7a2751f712"
+        ],
+        "request_sha256": "dbe2230f7aee3975d2ffe0c1de7e08ed626ebc13e78fdf05c6b4aaf7a140b73f",
+        "started_at_utc": "2026-10-24T03:27:59.043833+00:00",
+        "trial_id": "t011"
+      },
+      {
+        "arm": "Say hello.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:00.250436+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_ed8a45d9aeec4f51a4f5129145e24161"
+        ],
+        "request_sha256": "b7430664b98bb95aa45d8030f77f6a1aee01ba517cb7690b9ea4fdcfcd619390",
+        "started_at_utc": "2026-10-24T03:27:59.494845+00:00",
+        "trial_id": "t012"
+      },
+      {
+        "arm": "Be the null.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:00.776525+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_2f13ac67d0f74171b8cfd70a2fb86ad3"
+        ],
+        "request_sha256": "dbe2230f7aee3975d2ffe0c1de7e08ed626ebc13e78fdf05c6b4aaf7a140b73f",
+        "started_at_utc": "2026-10-24T03:28:00.281918+00:00",
+        "trial_id": "t013"
+      },
+      {
+        "arm": "Say hello.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:00.926647+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_e21090163137457cb29f607a35e7e05b"
+        ],
+        "request_sha256": "b7430664b98bb95aa45d8030f77f6a1aee01ba517cb7690b9ea4fdcfcd619390",
+        "started_at_utc": "2026-10-24T03:28:00.778756+00:00",
+        "trial_id": "t014"
+      },
+      {
+        "arm": "Be the null.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:01.078569+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_97577d76b190449f83d7bdc245da320a"
+        ],
+        "request_sha256": "dbe2230f7aee3975d2ffe0c1de7e08ed626ebc13e78fdf05c6b4aaf7a140b73f",
+        "started_at_utc": "2026-10-24T03:28:00.928593+00:00",
+        "trial_id": "t015"
+      },
+      {
+        "arm": "Say hello.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:01.229429+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_96f093e4bce44c4c9daf3da7839fb886"
+        ],
+        "request_sha256": "b7430664b98bb95aa45d8030f77f6a1aee01ba517cb7690b9ea4fdcfcd619390",
+        "started_at_utc": "2026-10-24T03:28:01.081588+00:00",
+        "trial_id": "t016"
+      },
+      {
+        "arm": "Be the null.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:01.378665+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_a624ffb475004545b381590400d9ab83"
+        ],
+        "request_sha256": "dbe2230f7aee3975d2ffe0c1de7e08ed626ebc13e78fdf05c6b4aaf7a140b73f",
+        "started_at_utc": "2026-10-24T03:28:01.230784+00:00",
+        "trial_id": "t017"
+      },
+      {
+        "arm": "Say hello.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:01.554779+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_3977a8c924394dd58127bf36f627ac01"
+        ],
+        "request_sha256": "b7430664b98bb95aa45d8030f77f6a1aee01ba517cb7690b9ea4fdcfcd619390",
+        "started_at_utc": "2026-10-24T03:28:01.380572+00:00",
+        "trial_id": "t018"
+      },
+      {
+        "arm": "Be the null.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:01.720923+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_39ba54dec387427282f0d73f1f48f9ae"
+        ],
+        "request_sha256": "dbe2230f7aee3975d2ffe0c1de7e08ed626ebc13e78fdf05c6b4aaf7a140b73f",
+        "started_at_utc": "2026-10-24T03:28:01.556560+00:00",
+        "trial_id": "t019"
+      },
+      {
+        "arm": "Say hello.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:01.882470+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_ca443032cd1743cea6ccc9081e07cc2f"
+        ],
+        "request_sha256": "b7430664b98bb95aa45d8030f77f6a1aee01ba517cb7690b9ea4fdcfcd619390",
+        "started_at_utc": "2026-10-24T03:28:01.722734+00:00",
+        "trial_id": "t020"
+      },
+      {
+        "arm": "Be the null.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:02.078286+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_ca04994ee7524dcc99b1884209a4ff81"
+        ],
+        "request_sha256": "dbe2230f7aee3975d2ffe0c1de7e08ed626ebc13e78fdf05c6b4aaf7a140b73f",
+        "started_at_utc": "2026-10-24T03:28:01.898007+00:00",
+        "trial_id": "t021"
+      },
+      {
+        "arm": "Say hello.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:02.197227+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_fa5239a947414efaaef3ac3198b67c08"
+        ],
+        "request_sha256": "b7430664b98bb95aa45d8030f77f6a1aee01ba517cb7690b9ea4fdcfcd619390",
+        "started_at_utc": "2026-10-24T03:28:02.080085+00:00",
+        "trial_id": "t022"
+      },
+      {
+        "arm": "Be the null.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:02.313432+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_badc6e7aa7214af48921209977f48513"
+        ],
+        "request_sha256": "dbe2230f7aee3975d2ffe0c1de7e08ed626ebc13e78fdf05c6b4aaf7a140b73f",
+        "started_at_utc": "2026-10-24T03:28:02.200964+00:00",
+        "trial_id": "t023"
+      },
+      {
+        "arm": "Say hello.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:02.440839+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_8d8107e19d504a12aea9df6dca6e0330"
+        ],
+        "request_sha256": "b7430664b98bb95aa45d8030f77f6a1aee01ba517cb7690b9ea4fdcfcd619390",
+        "started_at_utc": "2026-10-24T03:28:02.315080+00:00",
+        "trial_id": "t024"
+      },
+      {
+        "arm": "Be the null.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:02.587720+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_d39bc53c7a6c4740867d80358b2ba3b5"
+        ],
+        "request_sha256": "dbe2230f7aee3975d2ffe0c1de7e08ed626ebc13e78fdf05c6b4aaf7a140b73f",
+        "started_at_utc": "2026-10-24T03:28:02.444593+00:00",
+        "trial_id": "t025"
+      },
+      {
+        "arm": "Say hello.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:02.726351+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_fdad014a08dc479ab081d948c652f842"
+        ],
+        "request_sha256": "b7430664b98bb95aa45d8030f77f6a1aee01ba517cb7690b9ea4fdcfcd619390",
+        "started_at_utc": "2026-10-24T03:28:02.589718+00:00",
+        "trial_id": "t026"
+      },
+      {
+        "arm": "Be the null.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:02.874771+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_21f385e2c3eb4fb59226fb2695fe4095"
+        ],
+        "request_sha256": "dbe2230f7aee3975d2ffe0c1de7e08ed626ebc13e78fdf05c6b4aaf7a140b73f",
+        "started_at_utc": "2026-10-24T03:28:02.728062+00:00",
+        "trial_id": "t027"
+      },
+      {
+        "arm": "Say hello.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:03.046349+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_3c1893b67e4b4698ae0ccae046cdf5db"
+        ],
+        "request_sha256": "b7430664b98bb95aa45d8030f77f6a1aee01ba517cb7690b9ea4fdcfcd619390",
+        "started_at_utc": "2026-10-24T03:28:02.876685+00:00",
+        "trial_id": "t028"
+      },
+      {
+        "arm": "Be the null.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:03.168030+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_f949bcffde744995b8efe5059a6c09f3"
+        ],
+        "request_sha256": "dbe2230f7aee3975d2ffe0c1de7e08ed626ebc13e78fdf05c6b4aaf7a140b73f",
+        "started_at_utc": "2026-10-24T03:28:03.047794+00:00",
+        "trial_id": "t029"
+      },
+      {
+        "arm": "Say hello.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:03.341178+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_c0229bf050204ce6918454a9b635254f"
+        ],
+        "request_sha256": "b7430664b98bb95aa45d8030f77f6a1aee01ba517cb7690b9ea4fdcfcd619390",
+        "started_at_utc": "2026-10-24T03:28:03.169721+00:00",
+        "trial_id": "t030"
+      },
+      {
+        "arm": "Be the null.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:03.466885+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_9219b10d9cde490691ab916a0f385c70"
+        ],
+        "request_sha256": "dbe2230f7aee3975d2ffe0c1de7e08ed626ebc13e78fdf05c6b4aaf7a140b73f",
+        "started_at_utc": "2026-10-24T03:28:03.342944+00:00",
+        "trial_id": "t031"
+      },
+      {
+        "arm": "Say hello.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:03.634269+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_0c4b386af9664a5e9708388d6a58595a"
+        ],
+        "request_sha256": "b7430664b98bb95aa45d8030f77f6a1aee01ba517cb7690b9ea4fdcfcd619390",
+        "started_at_utc": "2026-10-24T03:28:03.470838+00:00",
+        "trial_id": "t032"
+      },
+      {
+        "arm": "Be the null.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:03.856632+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_0aad9035034149679b99d4630eb54445"
+        ],
+        "request_sha256": "dbe2230f7aee3975d2ffe0c1de7e08ed626ebc13e78fdf05c6b4aaf7a140b73f",
+        "started_at_utc": "2026-10-24T03:28:03.636119+00:00",
+        "trial_id": "t033"
+      },
+      {
+        "arm": "Say hello.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:04.007389+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_66f54cde5ab0456ca69f3fca711e2131"
+        ],
+        "request_sha256": "b7430664b98bb95aa45d8030f77f6a1aee01ba517cb7690b9ea4fdcfcd619390",
+        "started_at_utc": "2026-10-24T03:28:03.858441+00:00",
+        "trial_id": "t034"
+      },
+      {
+        "arm": "Be the null.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:04.177343+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_90a8f2da31864665b3b9bf665ed576a5"
+        ],
+        "request_sha256": "dbe2230f7aee3975d2ffe0c1de7e08ed626ebc13e78fdf05c6b4aaf7a140b73f",
+        "started_at_utc": "2026-10-24T03:28:04.008882+00:00",
+        "trial_id": "t035"
+      },
+      {
+        "arm": "Say hello.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:04.367976+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_1bf40e9bc8544ce38e992fde7434c584"
+        ],
+        "request_sha256": "b7430664b98bb95aa45d8030f77f6a1aee01ba517cb7690b9ea4fdcfcd619390",
+        "started_at_utc": "2026-10-24T03:28:04.181776+00:00",
+        "trial_id": "t036"
+      },
+      {
+        "arm": "Be the null.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:04.580451+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_92eab14bf3b545a09efb55a8943715be"
+        ],
+        "request_sha256": "dbe2230f7aee3975d2ffe0c1de7e08ed626ebc13e78fdf05c6b4aaf7a140b73f",
+        "started_at_utc": "2026-10-24T03:28:04.437029+00:00",
+        "trial_id": "t037"
+      },
+      {
+        "arm": "Say hello.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:04.713154+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_ec51f07bd281464fa4ce6533e1b00f42"
+        ],
+        "request_sha256": "b7430664b98bb95aa45d8030f77f6a1aee01ba517cb7690b9ea4fdcfcd619390",
+        "started_at_utc": "2026-10-24T03:28:04.581760+00:00",
+        "trial_id": "t038"
+      },
+      {
+        "arm": "Be the null.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:04.901616+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_0676d2c87f0e4136b05b744864fbb9a1"
+        ],
+        "request_sha256": "dbe2230f7aee3975d2ffe0c1de7e08ed626ebc13e78fdf05c6b4aaf7a140b73f",
+        "started_at_utc": "2026-10-24T03:28:04.714543+00:00",
+        "trial_id": "t039"
+      },
+      {
+        "arm": "Say hello.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:05.018416+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_a38a310bbc7847d18a3e69ccbbd36693"
+        ],
+        "request_sha256": "b7430664b98bb95aa45d8030f77f6a1aee01ba517cb7690b9ea4fdcfcd619390",
+        "started_at_utc": "2026-10-24T03:28:04.903219+00:00",
+        "trial_id": "t040"
+      },
+      {
+        "arm": "Be the null.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:05.137367+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_a8b185174a7f4e028214368ded7981d6"
+        ],
+        "request_sha256": "dbe2230f7aee3975d2ffe0c1de7e08ed626ebc13e78fdf05c6b4aaf7a140b73f",
+        "started_at_utc": "2026-10-24T03:28:05.020091+00:00",
+        "trial_id": "t041"
+      },
+      {
+        "arm": "Say hello.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:05.321281+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_18f0ea21f3ea4d3891286861b9f27551"
+        ],
+        "request_sha256": "b7430664b98bb95aa45d8030f77f6a1aee01ba517cb7690b9ea4fdcfcd619390",
+        "started_at_utc": "2026-10-24T03:28:05.138783+00:00",
+        "trial_id": "t042"
+      },
+      {
+        "arm": "Be the null.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:05.605426+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_c88f9a109b38433eb4f56895ff4c3c1c"
+        ],
+        "request_sha256": "dbe2230f7aee3975d2ffe0c1de7e08ed626ebc13e78fdf05c6b4aaf7a140b73f",
+        "started_at_utc": "2026-10-24T03:28:05.347299+00:00",
+        "trial_id": "t043"
+      },
+      {
+        "arm": "Say hello.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:05.775842+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_c43088bc0c4745eebec9aa6278672200"
+        ],
+        "request_sha256": "b7430664b98bb95aa45d8030f77f6a1aee01ba517cb7690b9ea4fdcfcd619390",
+        "started_at_utc": "2026-10-24T03:28:05.607074+00:00",
+        "trial_id": "t044"
+      },
+      {
+        "arm": "Be the null.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:05.912560+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_1f5458d9c37547569620dfc15e63f035"
+        ],
+        "request_sha256": "dbe2230f7aee3975d2ffe0c1de7e08ed626ebc13e78fdf05c6b4aaf7a140b73f",
+        "started_at_utc": "2026-10-24T03:28:05.777557+00:00",
+        "trial_id": "t045"
+      },
+      {
+        "arm": "Say hello.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:06.345861+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_6b4ed77bdaba47d490941e0ee85d4d35"
+        ],
+        "request_sha256": "b7430664b98bb95aa45d8030f77f6a1aee01ba517cb7690b9ea4fdcfcd619390",
+        "started_at_utc": "2026-10-24T03:28:05.913868+00:00",
+        "trial_id": "t046"
+      },
+      {
+        "arm": "Be the null.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:06.478094+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_197f2f2eace744ffbd137cd6f21f2c64"
+        ],
+        "request_sha256": "dbe2230f7aee3975d2ffe0c1de7e08ed626ebc13e78fdf05c6b4aaf7a140b73f",
+        "started_at_utc": "2026-10-24T03:28:06.348904+00:00",
+        "trial_id": "t047"
+      },
+      {
+        "arm": "Say hello.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:06.644760+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_053b36d225a547cc8ef727b8f9616029"
+        ],
+        "request_sha256": "b7430664b98bb95aa45d8030f77f6a1aee01ba517cb7690b9ea4fdcfcd619390",
+        "started_at_utc": "2026-10-24T03:28:06.479889+00:00",
+        "trial_id": "t048"
+      },
+      {
+        "arm": "Be the null.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:06.862947+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_a18ece2e161f4b44b775c19b2875b15c"
+        ],
+        "request_sha256": "dbe2230f7aee3975d2ffe0c1de7e08ed626ebc13e78fdf05c6b4aaf7a140b73f",
+        "started_at_utc": "2026-10-24T03:28:06.646290+00:00",
+        "trial_id": "t049"
+      },
+      {
+        "arm": "Say hello.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:07.018263+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_089aa0e51e8a4bdcbb625debad6afcaa"
+        ],
+        "request_sha256": "b7430664b98bb95aa45d8030f77f6a1aee01ba517cb7690b9ea4fdcfcd619390",
+        "started_at_utc": "2026-10-24T03:28:06.865016+00:00",
+        "trial_id": "t050"
+      },
+      {
+        "arm": "Be the null.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:07.244202+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_2bd4233df7ef4ec38989afb553832672"
+        ],
+        "request_sha256": "dbe2230f7aee3975d2ffe0c1de7e08ed626ebc13e78fdf05c6b4aaf7a140b73f",
+        "started_at_utc": "2026-10-24T03:28:07.019848+00:00",
+        "trial_id": "t051"
+      },
+      {
+        "arm": "Say hello.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:07.434904+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_7a2617a9d383485cbf2706d3e8d569de"
+        ],
+        "request_sha256": "b7430664b98bb95aa45d8030f77f6a1aee01ba517cb7690b9ea4fdcfcd619390",
+        "started_at_utc": "2026-10-24T03:28:07.246058+00:00",
+        "trial_id": "t052"
+      },
+      {
+        "arm": "Be the null.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:07.557739+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_a7ed6401363f45af9456205b34f69e97"
+        ],
+        "request_sha256": "dbe2230f7aee3975d2ffe0c1de7e08ed626ebc13e78fdf05c6b4aaf7a140b73f",
+        "started_at_utc": "2026-10-24T03:28:07.436584+00:00",
+        "trial_id": "t053"
+      },
+      {
+        "arm": "Say hello.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:07.689887+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_df039ab0fc9a4afea2a7ee5ed9603c44"
+        ],
+        "request_sha256": "b7430664b98bb95aa45d8030f77f6a1aee01ba517cb7690b9ea4fdcfcd619390",
+        "started_at_utc": "2026-10-24T03:28:07.559019+00:00",
+        "trial_id": "t054"
+      },
+      {
+        "arm": "Be the null.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:07.811872+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_eb629d3051cb472bafcd730239fa268b"
+        ],
+        "request_sha256": "dbe2230f7aee3975d2ffe0c1de7e08ed626ebc13e78fdf05c6b4aaf7a140b73f",
+        "started_at_utc": "2026-10-24T03:28:07.691030+00:00",
+        "trial_id": "t055"
+      },
+      {
+        "arm": "Say hello.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:07.933959+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_5f1f5ddd82694b399815e881ac146692"
+        ],
+        "request_sha256": "b7430664b98bb95aa45d8030f77f6a1aee01ba517cb7690b9ea4fdcfcd619390",
+        "started_at_utc": "2026-10-24T03:28:07.813469+00:00",
+        "trial_id": "t056"
+      },
+      {
+        "arm": "Be the null.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:08.065918+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_864861ca9d3d40d99dfe0386f7bd124f"
+        ],
+        "request_sha256": "dbe2230f7aee3975d2ffe0c1de7e08ed626ebc13e78fdf05c6b4aaf7a140b73f",
+        "started_at_utc": "2026-10-24T03:28:07.935159+00:00",
+        "trial_id": "t057"
+      },
+      {
+        "arm": "Say hello.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:08.196431+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_e2312015e7214188b231e1e7bb41c467"
+        ],
+        "request_sha256": "b7430664b98bb95aa45d8030f77f6a1aee01ba517cb7690b9ea4fdcfcd619390",
+        "started_at_utc": "2026-10-24T03:28:08.067481+00:00",
+        "trial_id": "t058"
+      },
+      {
+        "arm": "Be the null.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:08.365465+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_b0594314ee52410abe011b36887e7bfc"
+        ],
+        "request_sha256": "dbe2230f7aee3975d2ffe0c1de7e08ed626ebc13e78fdf05c6b4aaf7a140b73f",
+        "started_at_utc": "2026-10-24T03:28:08.198316+00:00",
+        "trial_id": "t059"
+      },
+      {
+        "arm": "Say hello.",
+        "classification": "OP",
+        "ended_at_utc": "2026-10-24T03:28:08.492792+00:00",
+        "error": {
+          "code": "model_not_found",
+          "message": "The model `gpt-4-0613` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations",
+          "param": null,
+          "type": "invalid_request_error"
+        },
+        "http_status": 404,
+        "raw_response_sha256": "9a5f46fb3f2149561d85c587c21da935c55e446b9ec7e6866b78da01f4821b0d",
+        "request_ids": [
+          "req_c845177aac6d4b1bb3133864be9d5d36"
+        ],
+        "request_sha256": "b7430664b98bb95aa45d8030f77f6a1aee01ba517cb7690b9ea4fdcfcd619390",
+        "started_at_utc": "2026-10-24T03:28:08.367199+00:00",
+        "trial_id": "t060"
+      }
+    ]
+  }
+}
